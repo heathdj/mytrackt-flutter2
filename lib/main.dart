@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       home: CategoriesScreen(),
       routes: {
-        '/categories': (ctx) => CategoryChecklistsScreen(),
+        CategoryChecklistsScreen.RouteName: (ctx) => CategoryChecklistsScreen(),
       },
     );
   }

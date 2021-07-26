@@ -11,8 +11,8 @@ class CategoryItem extends StatelessWidget {
   final Color color;
 
   void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx)
-        .pushNamed('/categories', arguments: {'id': id, 'title': title});
+    Navigator.of(ctx).pushNamed(CategoryChecklistsScreen.RouteName,
+        arguments: {'id': id, 'title': title});
   }
 
   @override
